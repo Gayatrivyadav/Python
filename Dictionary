@@ -1,1 +1,49 @@
+# dictionary
+# how to add the elements to the dictionary
+ dicti = {"name":"Gayatri",
+          "age": 23,
+          "education":"B.E."
+}
+print(dicti)
+dicti["color"] = "red"
+print(dicti)
 
+or
+
+dicti.update({"color":"red"})
+output: 
+{'name': 'Gayatri', 'age': 23, 'education': 'B.E.'}
+{'name': 'Gayatri', 'age': 23, 'education': 'B.E.', 'color': 'red'}
+---------------------------------------------------------------------
+
+# how to change values of existing keys
+ dicti = {"name":"Gayatri",
+          "age": 23,
+          "education":"B.E."
+}
+print(dicti)
+dicti["name"] = "Gauri"
+print(dicti)
+
+output: 
+{'name': 'Gayatri', 'age': 23, 'education': 'B.E.'}
+{'name': 'Gauri', 'age': 23, 'education': 'B.E.'}
+
+OR
+
+dicti.update({"name":"Gauri"})
+output: 
+{'name': 'Gayatri', 'age': 23, 'education': 'B.E.'}
+{'name': 'Gauri', 'age': 23, 'education': 'B.E.'}
+---------------------------------------------------------------------
+#How to remove items 
+
+ dicti = {"name":"Gayatri",
+          "age": 23,
+          "education":"B.E."
+}
+print(dicti)
+1. dicti.clear() # empties the dictionary
+2. dicti.pop("name") # removes the item with specified  key name
+3. dicti.popitem()   # removes the last inserted item
+4. del .dicti        # delete the dictionary completely

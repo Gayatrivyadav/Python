@@ -1,1 +1,13 @@
-
+# list
+# add items
+li = ["apple","banana","cherry"]
+li1 = ["Blueberry","mango"]
+li.append("Grapes")
+print(li)
+li.insert(1, "orange")
+print(li)
+li.extend(li1)
+print(li)
+['apple', 'banana', 'cherry', 'Grapes']
+['apple', 'orange', 'banana', 'cherry', 'Grapes']
+['apple', 'orange', 'banana', 'cherry', 'Grapes', 'Blueberry', 'mango']
